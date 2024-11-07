@@ -1,6 +1,19 @@
-import React from 'react';
-import { FaCsharp, FaHtml5, FaCss3Alt, FaGitAlt, FaReact, FaDatabase } from "react-icons/fa";
-import { SiCplusplus, SiJavascript, SiDotnet, SiMicrosoftsqlserver, SiRedux, SiStyledcomponents } from "react-icons/si";
+import {
+  FaCsharp,
+  FaHtml5,
+  FaCss3Alt,
+  FaGitAlt,
+  FaReact,
+  FaDatabase,
+} from "react-icons/fa";
+import {
+  SiCplusplus,
+  SiJavascript,
+  SiDotnet,
+  SiMicrosoftsqlserver,
+  SiRedux,
+  SiStyledcomponents,
+} from "react-icons/si";
 import { AiOutlineApi } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
 
@@ -28,5 +41,4 @@ export const skills = [
   { name: "SOLID Principles", icon: <FiSettings /> },
   { name: "Problem Solving", icon: <FiSettings /> },
   { name: "Styled components", icon: <SiStyledcomponents /> },
-
 ];
