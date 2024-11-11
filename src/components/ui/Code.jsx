@@ -1,91 +1,108 @@
-import {skills} from "../../../data/data-skills";
-import {tools} from "../../../data/data-tools";
-import Bubbles from './bubbles';
+import { skills } from "../../../data/data-skills";
+import { tools } from "../../../data/data-tools";
 import CodeItem from "./CodeItem";
+import { ColoredText } from '../../styled-components/ColoredText';
+import { MarginContainer } from '../../styled-components/MarginContainer';
+import CodeContainer from "./CodeContainer";
+
 
 function Code() {
+  const renderItems = (items, color) =>
+    items.slice(0, 7).map((item, index) => (
+      <CodeItem key={index} name={item.name || item} index={index} color={color} />
+    ));
+
   return (
-    <div className="col-lg-6 col-md-12 col-sm-12">
-      <div className="card-skills object-card">
-        <Bubbles />
-        <code>
+    <CodeContainer>
+      <code>
+        <div style={{paddingTop :`20px`}}>
+          <ColoredText color="var(--main-color)">const</ColoredText>
+          <ColoredText color="var(--color-white)">SoftwareEngineering</ColoredText>{' '}
+          <ColoredText color="var(--main-color)">=</ColoredText>{' '}
+          <ColoredText color="var(--color-gray)">{'{'}</ColoredText>
+        </div>
+
+        <MarginContainer>
+          <ColoredText color="var(--color-white)">name:</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">'Yasmin Muntaser'</ColoredText>
+          <ColoredText color="var(--color-gray)">,</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer>
+          <ColoredText color="var(--color-white)">tittle:</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">'Software Engineering'</ColoredText>
+          <ColoredText color="var(--color-gray)">,</ColoredText>
+        </MarginContainer>
+        
+
+        <MarginContainer>
+          <ColoredText color="var(--color-white)">skills:</ColoredText>{' '}
+          <ColoredText color="var(--color-gray)">[</ColoredText>
+          {renderItems(skills, "var(--color-dark-orange)")}
+          <ColoredText color="var(--color-gray)">]</ColoredText>
+          <ColoredText color="var(--color-gray)">,</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer>
+          <ColoredText color="var(--color-white)">tools:</ColoredText>{' '}
+          <ColoredText color="var(--color-gray)">[</ColoredText>
+          {renderItems(tools, "var(--color-dark-orange)")}
+          <ColoredText color="var(--color-gray)">]</ColoredText>
+          <ColoredText color="var(--color-gray)">,</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer>
+          <ColoredText color="var(--color-white)">hardWorker:</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">true</ColoredText>
+          <ColoredText color="var(--color-gray)">,</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer>
+          <ColoredText color="var(--color-white)">quickLearner:</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">true</ColoredText>
+          <ColoredText color="var(--color-gray)">,</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer>
+          <ColoredText color="var(--color-white)">problemSolver:</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">true</ColoredText>
+          <ColoredText color="var(--color-gray)">,</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer>
+          <ColoredText color="var(--color-green)">employable:</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">function</ColoredText>
+          <ColoredText color="var(--color-gray)">() {'{'}</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer margin="40px">
+          <ColoredText color="var(--color-dark-orange)">return</ColoredText>{' '}
+          <ColoredText color="var(--color-gray)">(</ColoredText>
           <div>
-            <span className="text-purple">const</span>
-            <span className="text-white"> SwoftwareEnginering </span>
-            <span className="text-purple">=</span>
-            <span className="text-gray"> {'{'} </span>
+          <ColoredText color="var(--color-white)">this.hardWorker</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">&amp;&amp;</ColoredText>{' '}
           </div>
-          <div className="m-l-20">
-            <span className="text-white">name:</span>
-            <span className="text-gray">&apos;</span>
-            <span className="text-orange">Yasmin Muntaser</span>
-            <span className="text-gray">&apos;</span>
-            <span className="text-gray">,</span>
+
+          <div>
+          <ColoredText color="var(--color-white)">this.problemSolver</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">&amp;&amp;</ColoredText>{' '}
           </div>
-          <div className="m-l-20">
-            <span className="text-white">title:</span>
-            <span className="text-gray">&apos;</span>
-            <span className="text-orange">Swoftware Enginering</span>
-            <span className="text-gray">&apos;</span>
-            <span className="text-gray">,</span>
+
+          <div>
+          <ColoredText color="var(--color-white)">this.skills.length</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">&gt;=</ColoredText>{' '}
+          <ColoredText color="var(--color-dark-orange)">{skills.length}</ColoredText>
           </div>
-          <div className="m-l-20">
-            <span className="text-white">skills:</span>
-            <span className="text-gray">[</span>
-              {skills.slice(0, 5).map((skill, index) =>(<CodeItem name={skill} index={index} key={index}/>))}
-            <span className="text-gray">]</span>
-          </div>
-          <div className="m-l-20">
-            <span className="text-white">tools:</span>
-            <span className="text-gray">[</span>
-              {tools.slice(0, 5).map((tool, index) =>(<CodeItem name={tool} index={index} key={index}/>))}
-            <span className="text-gray">]</span>
-          </div>
-          <div className="m-l-20">
-            <span className="text-white">hardWorker:</span>
-            <span className="text-orange">true</span>
-            <span className="text-gray">,</span>
-          </div>
-          <div className="m-l-20">
-            <span className="text-white">quickLearner:</span>
-            <span className="text-orange">true</span>
-            <span className="text-gray">,</span>
-          </div>
-          <div className="m-l-20">
-            <span className="text-white">problemSolver:</span>
-            <span className="text-orange">true</span>
-            <span className="text-gray">,</span>
-          </div>
-          <div className="m-l-20">
-            <span className="text-green">employable:</span>
-            <span className="text-orange">function</span>
-            <span className="text-gray">() {'{'}</span>
-          </div>
-          <span className="m-l-40 text-orange">return</span>
-          <span className="text-gray">(</span>
-          <div className="m-l-60">
-            <span className="text-cyan">this.</span>
-            <span className="text-white">hardWorker</span>
-            <span className="text-orange"> && </span>
-          </div>
-          <div className="m-l-60">
-            <span className="text-cyan">this.</span>
-            <span className="text-white">problemSolver</span>
-            <span className="text-orange"> && </span>
-          </div>
-          <div className="m-l-60">
-            <span className="text-cyan">this.</span>
-            <span className="text-white">skills.length</span>
-            <span className="text-orange"> &gt;= </span>
-            <span className="text-orange">{skills.length}</span>
-          </div>
-          <span className="m-l-60 text-gray">);</span>
-          <div className="text-gray m-l-40">{'}'}</div>
-          <div className="text-gray m-l-20">{'}'}</div>
-        </code>
-      </div>
-    </div>
+
+          <ColoredText color="var(--color-gray)">)</ColoredText>
+        </MarginContainer>
+
+        <MarginContainer margin="30px" color="var(--color-gray)">{'}'}</MarginContainer>
+        <MarginContainer margin="20px"color="var(--color-gray)">{'}'}</MarginContainer>
+      </code>
+    </CodeContainer>
   );
 }
 
 export default Code;
+
