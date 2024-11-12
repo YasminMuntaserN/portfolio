@@ -13,7 +13,7 @@ const Row = styled.div`
   justify-content: center;
 
   ${media.mobile`
-    height: 40vh;
+    height: 50vh;
   `}
 
   ${media.tablet`

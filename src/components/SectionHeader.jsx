@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const HeaderContainer=styled.div`
-      display: flex;
+    display: flex;
     justify-content: center;
     margin-top:40px;
     margin-bottom:30px;
