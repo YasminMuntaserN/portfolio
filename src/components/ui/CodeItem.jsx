@@ -4,7 +4,7 @@ function CodeItem({index ,name}) {
         <span>&apos;</span>
         {name}
         <span>&apos;</span>
-        {index < 4 && <span>,</span>}
+        {index < 6 && <span>,</span>}
       </>
     );
 }

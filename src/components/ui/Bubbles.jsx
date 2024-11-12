@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import ProjectName from '../progicts/projectName';
+import { media } from '../../styled-components/Media';
 const StyledBubbles=styled.div`
 display: flex;
-gap:70%;
+justify-content:space-between;
 border-bottom: 2px solid var(--color-border);
 padding: 10px ;
 position: relative;
+
 `;
 const BubbleSpan=styled.span`
 margin: 5px;

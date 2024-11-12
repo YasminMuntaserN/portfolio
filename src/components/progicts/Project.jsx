@@ -5,33 +5,39 @@ import { MarginContainer } from "../../styled-components/MarginContainer";
 import { MdEmergencyRecording } from "react-icons/md";
 import {FaGithub} from 'react-icons/fa';
 import { useState } from "react";
+import { media } from "../../styled-components/Media";
+import { Link } from "react-scroll";
 
 const Container = styled.div`
   width: 80%;
   margin:10px auto;
   line-height:28px;
+  
 `;
 const Image = styled.img`
   width: 100%;
   max-height: 60vh;
   object-fit: contain;
-  transform: ${(props) => (!props.markFillImage ? "translateY(15%)" : "none")};
-  margin-left: ${(props) => (!props.markFillImage ? "15px" : "0")};
+
+  ${media.desktop`{
+    transform: ${(props) => (!props.markFillImage ? "translateY(15%)" : "none")};
+    margin-left: ${(props) => (!props.markFillImage ? "15px" : "0")};
+  }`}
 `;
 const Grid = styled.div`
   display:grid;
-  grid-template-columns:1fr 1fr;
   padding-top:20px;
+
+  ${media.desktop`{
+  grid-template-columns:1fr 1fr;
   gap:100px;
+
+  }`}
 `;
 
 const Tec= styled.p`
 margin-top:10px;
 display: inline-block;  
-`;
-
-const Link =styled.a`
-    color: var(--second-color);
 `;
 
 
@@ -73,10 +79,10 @@ function Project({project}) {
         
         <MarginContainer>
             <ColoredText color="var(--color-white)">github : </ColoredText>
-            <ColoredText color="var(--second-color)">' <FaGithub /> <Link href={project.github} target="_blank">{project.name}</Link>'</ColoredText>
+            <ColoredText color="var(--second-color)">' <FaGithub /> <Link color="var( --background-color-two)" href={project.github} target="_blank">{project.name}</Link>'</ColoredText>
         </MarginContainer>
 
-        <MarginContainer color="var(--color-gray)">{'};'}</MarginContainer>
+        <MarginContainer c>{'};'}</MarginContainer>
 
       </code>
         </div>

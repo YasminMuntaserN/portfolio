@@ -3,7 +3,7 @@ import { media } from '../../styled-components/Media';
 import Bubbles from './Bubbles';
 
 export const StyledCodeContainer = styled.div`
-  width:100%;
+  width: 100%;
   padding: 10px;
   position: relative;
   border: 1px solid var(--color-border);
@@ -11,8 +11,8 @@ export const StyledCodeContainer = styled.div`
   background-image: linear-gradient(to right, var(--background-color), #1a1f33);
   font-size: 18px; 
   word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal; 
+  overflow-wrap: break-word;
+  white-space: normal; 
 
   &::after {
     content: '';
@@ -30,23 +30,23 @@ export const StyledCodeContainer = styled.div`
   ${media.mobile`
     width: 90%;
     font-size: 14px; 
-    margin-left:-20px;
+    margin-left: -20px;
   `}
   ${media.tablet`
     width: 90%;
     font-size: 14px; 
-    margin-left:-20px;
+    margin-left: -20px;
   `}
 `;
 
-function CodeContainer({children ,open ,project}) {
+function CodeContainer({ children, open, project = {} }) {
   return (
-    <StyledCodeContainer onClick={()=>open()} >
-      <Bubbles project={project}/>
+    <StyledCodeContainer onClick={() => open()}>
+      <Bubbles project={project} />
       {children}
-
     </StyledCodeContainer>
-  )
+  );
 }
 
-export default CodeContainer
+export default CodeContainer;
+
