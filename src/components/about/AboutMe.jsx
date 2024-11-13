@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import SectionHeader from "../SectionHeader"
+import SectionHeader from "../ui/SectionHeader";
 import ProfileImage from "./ProfileImage"
 import { media } from "../../styled-components/Media";
 
@@ -45,10 +45,10 @@ margin-bottom: 25px;
 `;
 const Row= styled.div`
     ${media.mobile`
-      height:57vh;
+      height:70vh;
       `}
       ${media.tablet`
-      height:70vh;
+      height:40vh;
       `}
       ${media.largeTablet`
       height:50vh;
@@ -58,7 +58,7 @@ const Row= styled.div`
 
 function AboutMe() {
   return (
-    <section>
+    <section id="about">
     <SectionHeader header="About Me" />
     <Container>
         <Row>
