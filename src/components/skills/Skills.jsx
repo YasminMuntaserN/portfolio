@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { skills } from "../../../data/data-skills"
-import SectionHeader from "../SectionHeader"
-import Skill from "./Skill"
+import { skills } from "../../../data/data-skills";
+import SectionHeader from "../ui/SectionHeader";
+import Skill from "./Skill";
 
 const SkillsSlide =styled.div`
   overflow: hidden;
@@ -30,7 +30,7 @@ const WrapperSkills = styled.div`
 
 function Skills() {
   return (
-    <section>
+    <section id="skills">
       <SectionHeader header="Skills" />
       <SkillsSlide>
       <WrapperSkills>
