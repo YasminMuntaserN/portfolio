@@ -95,20 +95,6 @@ ${media.desktop`
 `};
 `;
 
-function Header() {
-  const [openMenu, setMenuOpen] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024); 
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024); 
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   function Header() {
     const [openMenu, setMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024); 
@@ -152,6 +138,5 @@ function Header() {
       </header>
     );
   }
-}
   
   export default Header;
