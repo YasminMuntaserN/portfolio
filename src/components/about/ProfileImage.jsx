@@ -21,7 +21,7 @@ function ProfileImage() {
 
   return (
     <Container>
-      <Image src="./profile.jpg" alt="ProfileImage"/>
+      <Image src="./profile-img.jpg" alt="ProfileImage"/>
     </Container>
   )
 }

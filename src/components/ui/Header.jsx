@@ -120,7 +120,7 @@ function Header() {
           <Container>
             <NavItem>
               <Item>
-                <Link to="about" smooth={true} duration={500}>About</Link>
+              <Link to="about" smooth={true} duration={500}>About</Link>
               </Item>
               <Item>
                 <Link to="skills" smooth={true} duration={500}>Skills</Link>

@@ -48,10 +48,10 @@ const Row= styled.div`
       height:70vh;
       `}
       ${media.tablet`
-      height:40vh;
+      height:60vh;
       `}
       ${media.largeTablet`
-      height:50vh;
+      height:70vh;
       `}
 `;
 
@@ -65,7 +65,7 @@ function AboutMe() {
           <div class="card-me">
             <Header>About Me</Header>
             <P>
-            Software engineer with a solid foundation in C++ and C#, including expertise in algorithms, data structures, and object-oriented programming (OOP). Experienced in database management, UI development, and .NET technologies, including both the .NET Framework and .NET 8.0. Proficient in modern web development with HTML, CSS, and JavaScript, and knowledgeable in LINQ for efficient data querying. Currently advancing knowledge in SOLID principles, ASP.NET, API development, and React. As a dedicated student in a software engineering program, I am eager to apply my academic knowledge in a real-world setting, contribute to innovative projects, and collaborate with professionals in a dynamic development environment.
+            I'm Yasmin from Palestine, specifically from martyred Gaza ، Despite the challenges, I have worked hard to develop my skills and seize every available opportunity to grow. I've completed a course that helped me build a strong foundation in C++ and C#, gaining expertise in algorithms, data structures, and object-oriented programming (OOP). I also have experience with database management, working with SQL and ADO.NET, and have developed several projects using the .NET Framework and .NET 8.0. In addition, I’ve pursued web development, working with React and building various projects, some of which I integrated with back-end APIs. I’ve also gained knowledge of SOLID principles and LINQ.
             </P>
           </div>
       </Row>
