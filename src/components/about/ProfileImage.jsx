@@ -6,7 +6,6 @@ const Image=styled.img`
   object-fit: contain;
   margin: 0 auto;
   transform: translateZ(-10px) scale(0.95); 
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
 `;
 
 const Container=styled.div`

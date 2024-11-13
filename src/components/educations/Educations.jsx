@@ -1,4 +1,4 @@
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "../ui/SectionHeader";
 import { educations } from "../../../data/data-education";
 import Education from "./Education";
 import Line from "../ui/Line";

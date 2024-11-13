@@ -45,7 +45,7 @@ const Position = styled(GiClick)`
 
 const Icon = styled.span`
   display: flex;
-  background-color: var(--color-white);
+  background-color: var(--pure-color-white);
   font-size: 32px;
   justify-content: center;
   align-items: center;

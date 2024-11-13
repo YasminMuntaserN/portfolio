@@ -12,7 +12,18 @@ const Container = styled.div`
   width: 80%;
   margin:10px auto;
   line-height:28px;
-  
+  ${media.mobile`
+    margin-left:30px;
+    width: 105%;
+  `} 
+  ${media.tablet`
+    margin-left:40px;
+    width: 105%;
+  `} 
+  ${media.largeTablet`
+    margin-left:30px;
+    width: 100%;
+  `}
 `;
 const Image = styled.img`
   width: 100%;
@@ -28,11 +39,10 @@ const Grid = styled.div`
   display:grid;
   padding-top:20px;
 
-  ${media.desktop`{
-  grid-template-columns:1fr 1fr;
-  gap:100px;
-
-  }`}
+  ${media.desktop`
+    grid-template-columns:1fr 1fr;
+    gap:100px;
+  `} 
 `;
 
 const Tec= styled.p`
@@ -49,15 +59,14 @@ function Project({project}) {
 
       {isOpen &&
     <Grid>
-      <Image src={project.image} alt={project.id} markFillImage={project.markFillImage}/>
-      <div>
+      <div><Image src={project.image} alt={project.id} markFillImage={project.markFillImage}/></div>
           <code>
           <div style={{paddingTop :`20px`}}>
           <ColoredText color="var(--main-color)">const  </ColoredText>
           <ColoredText color="var(--color-white)"> project</ColoredText>{' '}
           <ColoredText color="var(--main-color)">=</ColoredText>{' '}
           <ColoredText color="var(--color-gray)">{'{'}</ColoredText>
-        </div>
+          </div>
 
         <MarginContainer>
             <ColoredText color="var(--color-white)">description : </ColoredText>
@@ -85,7 +94,6 @@ function Project({project}) {
         <MarginContainer c>{'};'}</MarginContainer>
 
       </code>
-        </div>
       </Grid>
 }
       </CodeContainer>
