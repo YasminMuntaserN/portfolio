@@ -62,7 +62,7 @@ function AboutMe() {
     <SectionHeader header="About Me" />
     <Container>
         <Row>
-          <div class="card-me">
+          <div>
             <Header>About Me</Header>
             <P>
             I'm Yasmin from Palestine, specifically from martyred Gaza ، Despite the challenges, I have worked hard to develop my skills and seize every available opportunity to grow. I've completed a course that helped me build a strong foundation in C++ and C#, gaining expertise in algorithms, data structures, and object-oriented programming (OOP). I also have experience with database management, working with SQL and ADO.NET, and have developed several projects using the .NET Framework and .NET 8.0. In addition, I’ve pursued web development, working with React and building various projects, some of which I integrated with back-end APIs. I’ve also gained knowledge of SOLID principles and LINQ.

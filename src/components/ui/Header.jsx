@@ -109,34 +109,49 @@ function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return (
-    <header>
-      <NavBar>
-        <NameLink href="./index.html">yasmin 🕊️</NameLink>
-        <HamburgerIcon onClick={() => setMenuOpen(!openMenu)}>
-          <HiBars3CenterLeft />
-        </HamburgerIcon>
-        {(openMenu || isDesktop) && (
-          <Container>
-            <NavItem>
-              <Item>
-              <Link to="about" smooth={true} duration={500}>About</Link>
-              </Item>
-              <Item>
-                <Link to="skills" smooth={true} duration={500}>Skills</Link>
-              </Item>
-              <Item>
-                <Link to="education" smooth={true} duration={500}>Education</Link>
-              </Item>
-              <Item>
-                <Link to="projects" smooth={true} duration={500}>Projects</Link>
-              </Item>
-            </NavItem>
-          </Container>
-        )}
-      </NavBar>
-    </header>
-  );
+  function Header() {
+    const [openMenu, setMenuOpen] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024); 
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setIsDesktop(window.innerWidth >= 1024); 
+      };
+  
+      window.addEventListener("resize", handleResize);
+  
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  
+    return (
+      <header>
+        <NavBar>
+          <NameLink href="./index.html">yasmin 🕊️</NameLink>
+          <HamburgerIcon onClick={() => setMenuOpen(!openMenu)}>
+            <HiBars3CenterLeft />
+          </HamburgerIcon>
+          {(openMenu || isDesktop) && (
+            <Container>
+              <NavItem>
+                <Item>
+                  <Link to="about">About</Link>
+                </Item>
+                <Item>
+                  <Link to="skills">Skills</Link>
+                </Item>
+                <Item>
+                  <Link to="education">Education</Link>
+                </Item>
+                <Item>
+                  <Link to="projects">Projects</Link>
+                </Item>
+              </NavItem>
+            </Container>
+          )}
+        </NavBar>
+      </header>
+    );
+  }
 }
-
-export default Header;
+  
+  export default Header;
