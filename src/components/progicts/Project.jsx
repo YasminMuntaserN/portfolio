@@ -68,14 +68,14 @@ function Project({ project }) {
 
               <MarginContainer>
                 <ColoredText color="var(--color-white)">description :</ColoredText>
-                <ColoredText color="var(--color-dark-orange)">'{project.description}'</ColoredText>
+                <ColoredText color="var(--color-dark-orange)">&apos;{project.description}&apos;</ColoredText>
                 <ColoredText color="var(--color-gray)">,</ColoredText>
               </MarginContainer>
 
               <MarginContainer>
                 <ColoredText color="var(--color-white)">technologies :</ColoredText>
                 <ColoredText color="var(--color-dark-orange)">{'['} {project.technologies.map((tec, index) => (
-                  <Tec key={tec}>'{tec}'{index !== project.technologies.length - 1 ? ', ' : ' '}</Tec>
+                  <Tec key={tec}>&apos;{tec}&apos;{index !== project.technologies.length - 1 ? ', ' : ' '}</Tec>
                 ))} {']'}</ColoredText>
                 <ColoredText color="var(--color-gray)">,</ColoredText>
               </MarginContainer>
