@@ -5,10 +5,13 @@ import Skills from "./components/skills/Skills";
 import StarterSection from "./components/home/StarterSection";
 import Modal from "./components/ui/Modal";
 import Projects from "./components/projectsSection/Projects";
+import GlobalStyles from "./styles/GlobalStyles";
+
 
 function App() {
   return (
     <>
+    <GlobalStyles /> 
     <Header/>
     <StarterSection />
     <AboutMe />
