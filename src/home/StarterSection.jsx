@@ -11,17 +11,16 @@ const Row = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   ${media.mobile`
-    height: 30vh;
+    height: 50vh;
   `}
 
   ${media.tablet`
-    height: 40vh;
+    height: 70vh;
   `}
 
   ${media.largeTablet`
-    height: 50vh;
+    height: 70vh;
   `}
 
 `;
