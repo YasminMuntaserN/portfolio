@@ -13,15 +13,15 @@ const Row = styled.div`
   justify-content: center;
 
   ${media.mobile`
-    height: 50vh;
+    height: 30vh;
   `}
 
   ${media.tablet`
-    height: 70vh;
+    height: 40vh;
   `}
 
   ${media.largeTablet`
-    height: 70vh;
+    height: 50vh;
   `}
 
 `;

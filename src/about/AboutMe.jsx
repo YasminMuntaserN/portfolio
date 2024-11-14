@@ -44,10 +44,10 @@ margin-bottom: 25px;
 `;
 const Row= styled.div`
     ${media.mobile`
-      height:70vh;
+      height:60vh;
       `}
       ${media.tablet`
-      height:60vh;
+      height:40vh;
       `}
       ${media.largeTablet`
       height:70vh;

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { media } from "../styled-components/Media";
 
 const Image=styled.img`
   border-radius: 40px;
@@ -15,6 +16,12 @@ const Container=styled.div`
     background-image: linear-gradient(to right, var(--background-color),  var(--color-border),  var(--main-color), #ffffff);
     padding:1rem;
     perspective: 1000px;
+    ${media.mobile`
+    margin-bottom:5rem;
+    `}
+    ${media.tablet`
+    margin-bottom:5rem;
+    `}
 `;
 
 function ProfileImage() {
