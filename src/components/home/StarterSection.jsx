@@ -81,7 +81,7 @@ function StarterSection() {
               <Intro>
                 Welcome,
                 <br />
-                I&apos;m <ColoredText color="var(--main-color)">Yasmin</ColoredText>
+                I'm <ColoredText color="var(--main-color)">Yasmin</ColoredText>
                 <br /> a <ColoredText color="var(--second-color)">Software Engineer</ColoredText>
                 <ContactLinks />
               </Intro>

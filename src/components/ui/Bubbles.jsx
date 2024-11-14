@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import ProjectName from '../progicts/projectName';
-
+import ProjectName from '../projectsSection/projectName';
 const StyledBubbles=styled.div`
 display: flex;
 justify-content:space-between;

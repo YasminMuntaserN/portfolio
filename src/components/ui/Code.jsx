@@ -24,13 +24,13 @@ function Code() {
 
         <MarginContainer>
           <ColoredText color="var(--color-white)">name:</ColoredText>{' '}
-          <ColoredText color="var(--color-dark-orange)">t&apos;Yasmin Muntasert&apos;</ColoredText>
+          <ColoredText color="var(--color-dark-orange)">'Yasmin Muntaser'</ColoredText>
           <ColoredText color="var(--color-gray)">,</ColoredText>
         </MarginContainer>
 
         <MarginContainer>
           <ColoredText color="var(--color-white)">tittle:</ColoredText>{' '}
-          <ColoredText color="var(--color-dark-orange)">&apos;Software Engineering&apos;</ColoredText>
+          <ColoredText color="var(--color-dark-orange)">'Software Engineering'</ColoredText>
           <ColoredText color="var(--color-gray)">,</ColoredText>
         </MarginContainer>
         

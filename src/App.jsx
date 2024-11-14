@@ -4,7 +4,7 @@ import Header from "./components/ui/Header";
 import Skills from "./components/skills/Skills";
 import StarterSection from "./components/home/StarterSection";
 import Modal from "./components/ui/Modal";
-import Projects from "./components/progicts/Projects";
+import Projects from "./components/projectsSection/Projects";
 
 function App() {
   return (
