@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import CodeContainer from "../ui/CodeContainer";
-import { ColoredText } from "../../styled-components/ColoredText";
-import { MarginContainer } from "../../styled-components/MarginContainer";
 import { MdEmergencyRecording } from "react-icons/md";
 import { FaGithub } from 'react-icons/fa';
 import { useState } from "react";
-import { media } from "../../styled-components/Media";
+import { media } from "../styled-components/Media";
+import CodeContainer from "../ui/CodeContainer";
+import { ColoredText } from "../styled-components/ColoredText";
+import { MarginContainer } from "../styled-components/MarginContainer";
 
 const Container = styled.div`
   width: 80%;

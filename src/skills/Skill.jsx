@@ -42,7 +42,6 @@ const P=styled.p`
 const Icon=styled.div`
   color: var(--color-white);
   font-size: 30px;
-  /* background-image: linear-gradient(to right, var(--second-color),  var(--color-border),  var(--main-color), var(--second-color)); */
   padding:5px 10px;
   border-radius:30%;
 `;

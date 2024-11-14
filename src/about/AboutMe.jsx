@@ -1,8 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import ProfileImage from "./ProfileImage";
+import { media } from "../styled-components/Media";
 import SectionHeader from "../ui/SectionHeader";
-import ProfileImage from "./ProfileImage"
-import { media } from "../../styled-components/Media";
-
 
 const Container = styled.div`
   display: grid;

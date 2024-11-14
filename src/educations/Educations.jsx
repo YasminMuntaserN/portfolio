@@ -1,8 +1,8 @@
-import SectionHeader from "../ui/SectionHeader";
-import { educations } from "../../../data/data-education";
-import Education from "./Education";
-import Line from "../ui/Line";
 import styled from "styled-components";
+import Education from "./Education";
+import SectionHeader from "../ui/SectionHeader"
+import Line from "../ui/Line";
+import {educations}from "../data/data-education";
 
 const Container = styled.div`
   position: relative;

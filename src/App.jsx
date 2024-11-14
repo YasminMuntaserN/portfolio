@@ -1,23 +1,22 @@
-import AboutMe from "./components/about/AboutMe";
-import Educations from "./components/educations/Educations";
-import Header from "./components/ui/Header";
-import Skills from "./components/skills/Skills";
-import StarterSection from "./components/home/StarterSection";
-import Modal from "./components/ui/Modal";
-import Projects from "./components/projectsSection/Projects";
-import GlobalStyles from "./styles/GlobalStyles";
-
-
+import GlobalStyle from "./styles/GlobalStyles";
+import StarterSection from "./home/StarterSection";
+import Header from "./ui/Header";
+import AboutMe from "./about/AboutMe";
+import Skills from "./skills/Skills";
+import Projects from "./projects/Projects";
+import Educations from "./educations/Educations";
+import Modal from "./ui/Modal";
 function App() {
+
   return (
     <>
-    <GlobalStyles /> 
     <Header/>
-    <StarterSection />
-    <AboutMe />
-    <Skills />
+    <GlobalStyle />
+    <StarterSection/>
+    <AboutMe/>
+    <Skills/>
     <Projects/>
-    <Educations />
+    <Educations/>
     <Modal/>
     </>
   )

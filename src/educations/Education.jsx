@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { GiClick } from "react-icons/gi";
-import { Link } from "../../styled-components/Link";
-import { media } from "../../styled-components/Media";
+import { Link } from "../styled-components/Link";
+import { media } from "../styled-components/Media";
 
 const fadeIn = keyframes`
   from {

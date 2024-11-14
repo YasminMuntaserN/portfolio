@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { skills } from "../../../data/data-skills";
-import SectionHeader from "../ui/SectionHeader";
 import Skill from "./Skill";
+import { skills } from "../data/data-skills";
+import SectionHeader from "../ui/SectionHeader";
 
 const SkillsSlide =styled.div`
   overflow: hidden;

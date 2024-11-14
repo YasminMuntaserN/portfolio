@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { media } from '../../styled-components/Media';
-import { ColoredText } from '../../styled-components/ColoredText';
-import ContactLinks from './ContactLinks';
-import Code from "../ui/code";
 import { HiArrowDownTray } from "react-icons/hi2";
-import { Container } from '../../styled-components/Container';
+import {Container} from "../styled-components/Container";
+import {ColoredText} from "../styled-components/ColoredText";
+import ContactLinks from './ContactLinks';
+import Code from '../ui/Code';
+import { media } from '../styled-components/Media';
 
 const Row = styled.div`
   display: flex;

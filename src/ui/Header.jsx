@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { HiBars3CenterLeft } from "react-icons/hi2";
-import { media } from "../../styled-components/Media";
 import { Link as ScrollLink } from 'react-scroll';
+import { media } from "../styled-components/Media";
 
 const NavBar = styled.nav`
   color: var(--main-color);

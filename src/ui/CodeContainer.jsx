@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../../styled-components/Media';
+import { media } from '../styled-components/Media';
 import Bubbles from './Bubbles';
 
 export const StyledCodeContainer = styled.div`

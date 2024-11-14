@@ -1,8 +1,8 @@
-import { skills } from "../../../data/data-skills";
-import { tools } from "../../../data/data-tools";
+import { skills } from "../data/data-skills";
+import { tools } from "../data/data-tools";
 import CodeItem from "./CodeItem";
-import { ColoredText } from '../../styled-components/ColoredText';
-import { MarginContainer } from '../../styled-components/MarginContainer';
+import { ColoredText } from '../styled-components/ColoredText';
+import { MarginContainer } from "../styled-components/MarginContainer";
 import CodeContainer from "./CodeContainer";
 
 
