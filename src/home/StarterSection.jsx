@@ -13,6 +13,7 @@ const Row = styled.div`
   justify-content: center;
   ${media.mobile`
     height: 50vh;
+    width:90%;
   `}
 
   ${media.tablet`
