@@ -111,7 +111,7 @@ function Education({ education, style }) {
         <ContentContainer>
           <span>{education.date}</span>
         <H>{education.name}</H>
-        <Link color=" #2a2e5a" href={education.site} target="_blank">
+        <Link color=" #bcc1f8" href={education.site} target="_blank">
           {education.siteName}
         </Link>
         <Position />

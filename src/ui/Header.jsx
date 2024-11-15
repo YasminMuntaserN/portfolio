@@ -27,6 +27,7 @@ const Link = styled(ScrollLink)`
   text-decoration: none;
   padding: 10px 0;
   transition: all 0.3s;
+  cursor: pointer;
   &:hover {
     color: var(--main-color);
   }

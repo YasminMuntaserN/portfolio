@@ -10,21 +10,27 @@ padding: 10px ;
 position: relative;
 
 `;
-const BubbleSpan=styled.span`
+const BubbleSpan=styled.div`
 margin: 5px;
 background-color: ${prop =>prop.color};
 border-radius: 50%;
-padding: 0px 5px 0px 10px;
+width:15px;
+height:15px;
+
+`;
+const BubbleContainer =styled.div`
+display: flex;
+flex-direction: row; 
 `;
 
 function Bubbles({project}) {
   return (
     <StyledBubbles>
-    <div>
+    <BubbleContainer>
     <BubbleSpan color={'var( --main-color)'}></BubbleSpan>
     <BubbleSpan color={'var( --second-color)'}></BubbleSpan>
     <BubbleSpan color={'var(  --color-orang)'}></BubbleSpan>
-    </div>
+    </BubbleContainer>
     <ProjectName project={project}/>
   </StyledBubbles>
   )
