@@ -86,7 +86,7 @@ function StarterSection() {
                 <ContactLinks />
               </Intro>
             <Button>
-              <Link href="https://drive.google.com/file/d/1rKyeNpZ8mNHfs5lW6b0yusIVfhzU8FUe/view?usp=sharing" target="_blank">
+              <Link href="https://drive.google.com/drive/folders/153wLbfwNxrvqsIr8vZj-e1sZev7T3tzU?usp=sharing" target="_blank">
                 <span>GET RESUME</span>
                 <HiArrowDownTray />
               </Link>
