@@ -1,6 +1,7 @@
 export const tools = [
   ".NET Framework",
   "SQL Server",
+  "Entity Framework Core",
   "Vite",
   "TailwindCSS",
   "React",

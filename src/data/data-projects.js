@@ -1,6 +1,28 @@
 export const projects = [
   {
     id: 1,
+    name: "Say Hello |Real-Time Chat Application",
+    date: "11/2024 - Present",
+    description:
+      "A seamless communication platform enabling real-time private and group messaging with features like user authentication, profile management .It offers a user-friendly interface for chat organization, group creation, and efficient interaction in a fast and secure environment.",
+    technologies: [
+      ".NET 8.0",
+      "JWT (JSON Web Tokens)",
+      "Entity Framework Core",
+      "SQL Server",
+      "REST API",
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "SignalR",
+    ],
+    image: "./projects/sayHello.png",
+    markFillImage: true,
+    demo: "https://youtu.be/ZqCrSqjeXdg?si=AOT9c9hJqpY2hgIe",
+    github: "https://github.com/YasminMuntaserN/cake-delivery.git",
+  },
+  {
+    id: 2,
     name: "Cake Delivery System",
     date: "10/2024 - Present",
     description:
@@ -20,7 +42,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/cake-delivery.git",
   },
   {
-    id: 2,
+    id: 3,
     name: "Study Center System",
     date: "10/2024 - Present",
     description:
@@ -39,7 +61,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/study-center.git",
   },
   {
-    id: 3,
+    id: 4,
     name: "The Wild Oasis",
     date: "09/2024 - Present",
     description:
@@ -58,7 +80,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/the-wild-oasis.git",
   },
   {
-    id: 4,
+    id: 5,
     name: "Fast React Pizza",
     date: "08/2024 - Present",
     description:
@@ -70,7 +92,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/fast-react-pizza.git",
   },
   {
-    id: 5,
+    id: 6,
     name: "World Wise",
     date: "09/2024 - Present",
     description:
@@ -82,7 +104,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/WorldWise.git",
   },
   {
-    id: 6,
+    id: 7,
     name: "Clinic  System",
     date: "10/2024 - Present",
     description:
@@ -101,7 +123,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/clinic-system.git",
   },
   {
-    id: 7,
+    id: 8,
     name: "Small Cinema",
     date: "08/2024 - Present",
     description:
@@ -113,7 +135,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/movie-website.git",
   },
   {
-    id: 8,
+    id: 9,
     name: "Travel List",
     date: "08/2024 - Present",
     description:
@@ -125,7 +147,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/travel-list.git",
   },
   {
-    id: 9,
+    id: 10,
     name: "Math Quiz Game",
     date: "10/2024 - Present",
     description:
@@ -137,7 +159,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/math-quizzes-system.git",
   },
   {
-    id: 10,
+    id: 11,
     name: "Karate Club System",
     date: "07/2024 - Present",
     description:
@@ -149,7 +171,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/karate-club.git",
   },
   {
-    id: 11,
+    id: 12,
     name: "Classy Weather",
     date: "09/2024 - Present",
     description:

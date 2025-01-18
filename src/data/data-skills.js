@@ -29,6 +29,7 @@ export const skills = [
   { name: "SQL Server", icon: SiMicrosoftsqlserver },
   { name: "T-SQL", icon: FaDatabase },
   { name: "LINQ", icon: FiSettings },
+  { name: "Entity Framework Core", icon: FiSettings },
   { name: "HTML", icon: FaHtml5 },
   { name: "CSS", icon: FaCss3Alt },
   { name: "JavaScript", icon: SiJavascript },
