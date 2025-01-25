@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    name: "Say Hello |Real-Time Chat Application",
+    name: "Say Hello |Real-Time Chat",
     date: "11/2024 - Present",
     description:
       "A seamless communication platform enabling real-time private and group messaging with features like user authentication, profile management .It offers a user-friendly interface for chat organization, group creation, and efficient interaction in a fast and secure environment.",
@@ -18,8 +18,8 @@ export const projects = [
     ],
     image: "./projects/sayHello.png",
     markFillImage: true,
-    demo: "https://youtu.be/ZqCrSqjeXdg?si=AOT9c9hJqpY2hgIe",
-    github: "https://github.com/YasminMuntaserN/cake-delivery.git",
+    demo: "https://youtu.be/WRg_YS79C2s",
+    github: "https://github.com/YasminMuntaserN/say-hello.git",
   },
   {
     id: 2,
