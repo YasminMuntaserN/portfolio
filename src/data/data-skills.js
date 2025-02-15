@@ -17,6 +17,7 @@ import {
 } from "react-icons/si";
 import { AiOutlineApi } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
+import { BiLogoTypescript } from "react-icons/bi";
 
 export const skills = [
   { name: ".NET", icon: SiDotnet },
@@ -33,6 +34,7 @@ export const skills = [
   { name: "HTML", icon: FaHtml5 },
   { name: "CSS", icon: FaCss3Alt },
   { name: "JavaScript", icon: SiJavascript },
+  { name: "TypeScript", icon: BiLogoTypescript },
   { name: "Git", icon: FaGitAlt },
   { name: "3-Tier Architecture", icon: FiSettings },
   { name: "Windows Forms", icon: SiDotnet },

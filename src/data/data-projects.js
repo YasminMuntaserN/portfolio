@@ -1,6 +1,26 @@
 export const projects = [
   {
     id: 1,
+    name: "LexiSnap Web | Vocabulary Builder",
+    date: "02/2025 - Present",
+    description:
+      "A smart vocabulary-building platform that syncs with the LexiSnap mobile app and Google Chrome extension. Save words instantly, add definitions, translations, and synonyms, and organize them for easy learning. Features dark/light mode, pronunciation guides, and real-time syncing.",
+    technologies: [
+      "React",
+      "Vite",
+      "Firebase",
+      "React Query",
+      "Styled Components",
+      "TypeScript",
+      "React Router",
+    ],
+    image: "./projects/lexisnap.png",
+    markFillImage: true,
+    demo: "https://lexi-snap.vercel.app/",
+    github: "https://github.com/YasminMuntaserN/lexiSnap.git",
+  },
+  {
+    id: 2,
     name: "Say Hello |Real-Time Chat",
     date: "11/2024 - Present",
     description:
@@ -22,7 +42,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/say-hello.git",
   },
   {
-    id: 2,
+    id: 3,
     name: "Cake Delivery System",
     date: "10/2024 - Present",
     description:
@@ -42,7 +62,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/cake-delivery.git",
   },
   {
-    id: 3,
+    id: 4,
     name: "Study Center System",
     date: "10/2024 - Present",
     description:
@@ -61,7 +81,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/study-center.git",
   },
   {
-    id: 4,
+    id: 5,
     name: "The Wild Oasis",
     date: "09/2024 - Present",
     description:
@@ -80,7 +100,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/the-wild-oasis.git",
   },
   {
-    id: 5,
+    id: 6,
     name: "Fast React Pizza",
     date: "08/2024 - Present",
     description:
@@ -92,7 +112,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/fast-react-pizza.git",
   },
   {
-    id: 6,
+    id: 7,
     name: "World Wise",
     date: "09/2024 - Present",
     description:
@@ -104,7 +124,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/WorldWise.git",
   },
   {
-    id: 7,
+    id: 8,
     name: "Clinic  System",
     date: "10/2024 - Present",
     description:
@@ -123,7 +143,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/clinic-system.git",
   },
   {
-    id: 8,
+    id: 9,
     name: "Small Cinema",
     date: "08/2024 - Present",
     description:
@@ -135,7 +155,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/movie-website.git",
   },
   {
-    id: 9,
+    id: 10,
     name: "Travel List",
     date: "08/2024 - Present",
     description:
@@ -147,7 +167,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/travel-list.git",
   },
   {
-    id: 10,
+    id: 11,
     name: "Math Quiz Game",
     date: "10/2024 - Present",
     description:
@@ -159,7 +179,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/math-quizzes-system.git",
   },
   {
-    id: 11,
+    id: 12,
     name: "Karate Club System",
     date: "07/2024 - Present",
     description:
@@ -171,7 +191,7 @@ export const projects = [
     github: "https://github.com/YasminMuntaserN/karate-club.git",
   },
   {
-    id: 12,
+    id: 13,
     name: "Classy Weather",
     date: "09/2024 - Present",
     description:
