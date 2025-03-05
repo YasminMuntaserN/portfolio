@@ -62,9 +62,11 @@ function AboutMe() {
     <Container>
         <Row>
           <div>
-            <Header>About Me</Header>
+            <Header>About Me </Header>
             <P>
-            I'm Yasmin from Palestine, specifically from martyred Gaza ، Despite the challenges, I have worked hard to develop my skills and seize every available opportunity to grow. I've completed a course that helped me build a strong foundation in C++ and C#, gaining expertise in algorithms, data structures, and object-oriented programming (OOP). I also have experience with database management, working with SQL and ADO.NET, and have developed several projects using the .NET Framework and .NET 8.0. In addition, I’ve pursued web development, working with React and building various projects, some of which I integrated with back-end APIs. I’ve also gained knowledge of SOLID principles and LINQ.
+            I am Yasmin Nassar, born and raised in Palestine_Gaza, where every challenge became a lesson and every obstacle fueled my determination. My journey has been shaped by resilience, curiosity, and an unwavering love for learning.
+            Despite the difficulties, I never let circumstances define my potential. I embraced every opportunity to grow, diving into technology, problem-solving, and creativity. With every line of code and every project, I see the power of innovation to break barriers and create change.
+            To me, learning is more than gaining knowledge—it’s a testament to perseverance, a path to new possibilities, and a way to turn dreams into reality. No challenge will ever stand in the way of my ambition.
             </P>
           </div>
       </Row>
