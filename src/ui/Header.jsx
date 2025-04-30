@@ -132,6 +132,9 @@ ${media.desktop`
                 <Item>
                   <Link to="projects">Projects</Link>
                 </Item>
+                <Item>
+                  <Link to="articles">Articles</Link>
+                </Item>
               </NavItem>
             </Container>
           )}
