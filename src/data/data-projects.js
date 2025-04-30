@@ -1,6 +1,29 @@
 export const projects = [
   {
     id: 1,
+    name: "Cosmetic Clinic Dashboard",
+    date: "04/2025 - Present",
+    description:
+        "A modern and feature-rich dashboard for managing a cosmetic clinic., this app offers an interactive UI for managing appointments, patients, doctors, products, treatments, and more.",
+    technologies: [
+      ".net core",
+      "mongoDb",
+      "React",
+      "SignalR",
+      "Vite",
+      "Supabase",
+      "React Query",
+      "TypeScript",
+      "React Router",
+      "Axios",
+    ],
+    image: "./projects/cosmeticsClinic.png",
+    markFillImage: true,
+    demo: "https://cosmetic-clinic.vercel.app/",
+    github: "https://github.com/YasminMuntaserN/lexiSnap.git",
+  },
+  {
+    id: 1,
     name: "LexiSnap Web | Vocabulary Builder",
     date: "02/2025 - Present",
     description:

@@ -47,7 +47,7 @@ const Header = styled.div`
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    background-image: linear-gradient(to right, var(--color-border), var(--color-border), var(--main-color));
+    background-image: linear-gradient(to right, var(--color-border), var(--color-border), #9d7997, var(--main-color));
 `;
 
 const Category = styled.div`
@@ -65,7 +65,7 @@ const CategoryName = styled.p`
 `;
 
 const Container = styled.div`
-    background-color: var(--color-white);
+    background-color: floralwhite;
     padding: 1rem;
     flex: 1;
     display: flex;

@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
         --background-color-two: #155DA5;
         --main-color: #F38CBB;
         --color-gray: #AFAFDC;
-        --pure-color-white: #ffffff;
+        --pure-color-white: #ffff;
     }
 
     * {
