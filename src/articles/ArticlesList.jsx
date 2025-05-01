@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import ArticleCard from "./ArticleCard.jsx";
 import AnimatedCard from "./AnimatedCard.jsx";
+import {media} from "../styled-components/Media.jsx";
 
 const Empty = styled.div`
     text-align: center;
@@ -20,6 +21,13 @@ const Grid = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
+
+    ${media.mobile`
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+  `}
+    ${media.tablet`
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+  `}
 `;
 
 function ArticlesList({ articles }) {

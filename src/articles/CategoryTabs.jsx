@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {useMediaQuery} from "../hooks/useMediaQuery.js";
 
 const Container = styled.div`
     margin-bottom: 2.5rem;
@@ -41,6 +42,7 @@ const CategoryTabs = ({
                        categories,
                        activeCategory,
                        onSelectCategory }) => {
+    const isMobile =useMediaQuery("(max-width: 600px)");
     return (
         <Container>
             <TabList>
@@ -51,7 +53,7 @@ const CategoryTabs = ({
                         onClick={() => onSelectCategory(category.id)}
                     >
                         {category.icon}
-                        {category.label}
+                        {  !isMobile && category.label }
                     </Tab>
                 ))}
             </TabList>

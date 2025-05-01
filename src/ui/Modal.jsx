@@ -17,6 +17,7 @@ const Container =styled.div`
   gap:10px;
   flex-direction:column;
   border-radius: 70px;
+    z-index: 1000;
 `;
 
 const Icon=styled.div`

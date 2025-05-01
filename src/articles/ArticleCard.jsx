@@ -4,6 +4,7 @@ import {IoLayers} from "react-icons/io5";
 import styled from "styled-components";
 import {MdKeyboardDoubleArrowDown} from "react-icons/md";
 import {RiFunctionFill} from "react-icons/ri";
+import {media} from "../styled-components/Media.jsx";
 
 const Card = styled.div`
     border-radius: 0.75rem;
@@ -17,7 +18,7 @@ const Card = styled.div`
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-
+    z-index: 0;
     &:hover {
         transform: translateY(-5px);
     }
@@ -36,6 +37,9 @@ const Name = styled.h2`
     font-size: 15px;
     color: var(--color-white);
     margin-bottom: 0.7rem;
+    ${media.mobile`
+      font-size: 12px;
+  `}
 `;
 
 const Date = styled.span`
@@ -78,6 +82,9 @@ const Data = styled.p`
     margin-top: 1rem;
     flex: 1;
     overflow-y: auto;
+    ${media.mobile`
+      font-size: 16px;
+  `}
 `;
 
 const Expand = styled.div`

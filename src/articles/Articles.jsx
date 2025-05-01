@@ -9,6 +9,8 @@ import ArticlesList from "./ArticlesList.jsx";
 import Pagination from "./Pagination.jsx";
 import {usePagination} from "../PaginationContext.jsx";
 import {RiFunctionFill} from "react-icons/ri";
+import {useMediaQuery} from "../hooks/useMediaQuery.js";
+import {media} from "../styled-components/Media.jsx";
 
 const Container = styled.div`
     display: flex;
@@ -17,7 +19,15 @@ const Container = styled.div`
     transition: colors 0.3s;
     gap: 2rem;
     margin:10px auto;
-    padding:80px;
+    padding:65px;
+    justify-content: center;
+    align-items: center;
+    ${media.mobile`
+      padding:30px;
+  `}
+    ${media.tablet`
+      padding:40px;
+  `}
 `;
 const SubContainer = styled.div`
     display: flex;
@@ -45,9 +55,10 @@ const Description = styled.p`
 function Articles() {
     const [activeCategory, setActiveCategory] = useState('all');
      const {currentPage}=usePagination();
+     const isMobile =useMediaQuery("(max-width: 800px)");
      
    const filteredArticles =()=> {
-       const articlesPerPage = 6;
+       const articlesPerPage = isMobile ? 3 :6;
        const filteredArticles = articles.filter(article => {
            const matchesCategory = activeCategory === 'all' || article.category === activeCategory;
            return matchesCategory;
